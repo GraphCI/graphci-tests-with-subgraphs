@@ -2,6 +2,6 @@ meta:
   subgraphs:
     - graphci/tests-indirectly-included:latest
 test_dep_on_subgraph_node:
-  env: subgraph_node_completes
+  env: tests-indirectly-included
   img: alpine
-  run: echo $SUBGRAPH_NODE_COMPLETES | grep "YES"
+  run: echo $TESTS_INDIRECTLY_INCLUDED | grep "YES"
