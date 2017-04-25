@@ -1,0 +1,7 @@
+meta:
+  subgraphs:
+    - graphci/tests-indirectly-included:latest
+test_dep_on_subgraph_node:
+  env: subgraph_node_completes
+  img: alpine
+  run: echo $SUBGRAPH_NODE_COMPLETES | grep "YES"
